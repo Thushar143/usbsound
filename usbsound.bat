@@ -8,7 +8,8 @@ powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 4}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{DOWN 8}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 4}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER}')
-insert
+powershell -c (New-Object -ComObject WScript.Shell).SendKeys('insert')
+powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER}')
 timeout 2 > null
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 3}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER}')
@@ -16,7 +17,8 @@ powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 3}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{DOWN}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 4}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER}')
-eject
+powershell -c (New-Object -ComObject WScript.Shell).SendKeys('eject')
+powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER}')
 timeout 2 > null
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 3}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER 2}')
