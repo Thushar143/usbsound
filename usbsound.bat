@@ -1,7 +1,7 @@
 copy C:\usbsound\eject.wav C:\Windows\Media\
 copy C:\usbsound\insert.wav C:\Windows\Media\
 mmsys.cpl
-timeout 3 > null
+timeout 2 > null
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 3}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{RIGHT 2}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 4}')
@@ -22,3 +22,4 @@ powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER}')
 timeout 1 > null
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{TAB 3}')
 powershell -c (New-Object -ComObject WScript.Shell).SendKeys('{ENTER 2}')
+exit
